@@ -12,19 +12,19 @@ def factorize(no):
 
     Args:
 
-        no: integer input.
+        no: is the input integer.
 
-        Return: A tuple of two factors if the are not prime numbers
+        Return: A tuple of two factors if not prime numbers
 
-                None if the is a prime number.
+                None if is a prime number.
 
     '''
 
-    for n in range(2, int(no**0.5)+1):
+    for m in range(2, int(no**0.5)+1):
 
-        if no % n == 0:
+        if no % m == 0:
 
-            return (n, no//n)
+            return (m, no//m)
 
     return None
 
@@ -62,11 +62,11 @@ if __name__ == "__main__":
     start_time = time.time()
 
 
-    '''loops over each line (which should contain one natural number per line),
+    '''loops over each line (containing one natural number per line),
 
-        and calls factorize on each number.
+        and calls factorization on each number.
 
-        If factorize returns a tuple of factors,
+        If factorization returns a tuple of factors,
 
         it prints the factorization in the desired forma
 
@@ -83,7 +83,7 @@ if __name__ == "__main__":
             print(f"{no}={factors[0]}*{factors[1]}")
 
 
-        '''If the elapsed time exceeds 5 seconds,
+        '''If the elapsed time more than 5 seconds,
 
             the program exits with an error message.
 
